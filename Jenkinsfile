@@ -1,12 +1,10 @@
 pipeline {
-    agent any
-    stages {
+    node {
         stage('SonarQube analysis') {
-                steps {
-                    def scannerHome = tool 'SonarQube Scanner 2.8';
-                    withSonarQubeEnv('My SonarQube Server') {
-                    sh "${scannerHome}/bin/sonar-scanner"
-                }
+            // requires SonarQube Scanner 2.8+
+            def scannerHome = tool 'SonarQube Scanner 2.8';
+            withSonarQubeEnv('My SonarQube Server') {
+            sh "${scannerHome}/bin/sonar-scanner"
             }
         }
     }
