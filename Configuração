@@ -1,0 +1,3 @@
+-> Instalar o plugin Sonar Qube Scanner
+-> Habilitá-lo em Configurar o Jenkins > Global Configuration
+-> Configurar o servidor em Configurar o Jenkins > Confirar o Sistema

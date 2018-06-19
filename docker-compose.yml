@@ -12,7 +12,8 @@ services:
       - 50000:50000
     volumes:
       - ./:/jenkins
-    
+    networks: 
+      - poc
   sonar_qube:
     image: sonarqube
     ports:
