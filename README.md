@@ -30,4 +30,4 @@
     o código que está buildando no Jenkins. Entretanto, se aparecerem bugs, isso não
     gerará um erro no pipeline.
 
-    Para resolver esse problema, é necessário habilitar o webhook do SonarQube.
+    Para resolver esse problema, é necessário [...]
