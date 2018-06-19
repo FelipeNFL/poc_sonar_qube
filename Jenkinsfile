@@ -1,19 +1,11 @@
-// pipeline {
-//     agent {
-//         node {
-//             // stages {
-//             //     stage('SonarQube analysis') {
-//             //         // requires SonarQube Scanner 2.8+
-//             //         def scannerHome = tool 'SonarQube Scanner 2.8';
-//             //         withSonarQubeEnv('My SonarQube Server') {
-//             //             sh "${scannerHome}/bin/sonar-scanner"
-//             //         }
-//             //     }
-//             // }
-//         }
-//     }
-// }
-
-pipeline {
-    agent { node { label 'labelName' } }
+node {  
+    stage('Build') { 
+        // 
+    }
+    stage('Test') { 
+        // 
+    }
+    stage('Deploy') { 
+        // 
+    }
 }
