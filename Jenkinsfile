@@ -5,8 +5,9 @@ pipeline {
           node {
               def scannerHome = tool 'SonarQube Scanner 2.8';
               withSonarQubeEnv('My SonarQube Server') {
-              sh "${scannerHome}/bin/sonar-scanner"
-          }
+                sh "${scannerHome}/bin/sonar-scanner"
+              }
+            }
         }
     }
 }
